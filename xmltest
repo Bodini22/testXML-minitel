@@ -1,0 +1,25 @@
+<services>
+<interpreteur url="http://www.minipavi.fr/XMLint/?xurl="/>
+<début nom="Acceuil"/>
+<page nom="sommaire">
+<ecran>
+</ecran>
+<position ligne="1" col="1"/>
+<couleur texte="blanc"/>
+<ecrit texte="Ceci est un test"/></ecran> 
+<entree> 
+<zonesaisie 
+ligne="24" col="15" longueur="1" 
+curseur="visible" /> 
+<validation touche="envoi" /> 
+<validation touche="repetition" /> 
+</entree> 
+<action defaut="Erreur de saisie!" > 
+<saisie choix="F" touche="envoi" suivant="page1" /> 
+<saisie choix="G" touche="envoi" suivant="page2" /> 
+<saisie choix="H" touche="envoi" suivant="page3" /> 
+<saisie touche="repetition" suivant="sommaire" /> 
+</action> 
+</page> 
+(......définition des autres pages......) 
+</service> 
